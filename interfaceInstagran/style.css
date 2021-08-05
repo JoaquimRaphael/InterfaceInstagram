@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: rgb(243,243,243);
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 50%;
+    min-height: 100vh;
+}
+
+.instagran-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.instagran-phone img{
+    height: 50rem;
+}
+
+
+
+.instagran-continue{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 60%;
+    min-height: 40rem;
+
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgrey;
+}
+
+.profile-photo img{
+    height: 8rem;
+    width: 8rem;
+}
+
+.profile-photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1.3rem;
+}
+
+.group:nth-child(1){
+    min-height: 19rem;
+}
+
+.instagran-logo{
+    height: 3rem;;
+}
+.continue{
+    background-color: rgb(81, 81, 247);
+    color: white;
+    padding: 0.4rem;
+}
+.remover{
+    margin-top: 1rem;
+    color: rgb(81, 81, 247);
+}
+
+.not-acount{
+    color: lightgrey;
+}
+
+.link-blue{
+    color: rgb(81, 81, 247);
+}
+
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+.download{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1){
+    background-image: url("./img/apple-button.png");
+}
+
+.app-download:nth-child(2){
+    background-image: url("./img/googleplay-button.png");
+}
+
+@media (max-width: 1024px){
+    .container{
+        width: 90%;
+    }
+}
+
+@media(max-width: 670px){
+    .container{
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .instagran-phone{
+        display: none;
+    }
+
+    .app-download{
+        width: 7rem;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
